@@ -63,7 +63,6 @@ Used for the category bar and filtering. Set `category` on each product:
 ["police"] = {
     { name = 'weapon_stungun', price = 1, grade = 0, category = "Weapons" },
     { name = 'ifaks', price = 1, grade = 0, category = "Medical" },
-    -- optional: requiresLicense = true
 },
 ```
 
