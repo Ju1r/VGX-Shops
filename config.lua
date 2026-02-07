@@ -1,40 +1,41 @@
 Config = {}
 
-
+--Language for the shop UI (en/ar)
+--لغة واجهة المتجر (en/ar)
 Config.Locale = 'en' 
--- 🇺🇸 Language for the shop UI (en/ar)
--- 🇸🇦 لغة واجهة المتجر (en/ar)
 
+--Main UI accent color (buttons, highlights)
+--اللون الأساسي للواجهة (الأزرار والتحديد)
+Config.UiColor = "#10D6E6"
 
-Config.UiColor = "#0099ff"
--- 🇺🇸 Main UI accent color (buttons, highlights)
--- 🇸🇦 اللون الأساسي للواجهة (الأزرار والتحديد)
+--Core framework resource name (qb-core)
+--اسم الكور المستخدم في السيرفر (qb-core)
+Config.Core = 'Just-core'
 
-
-Config.Core = 'qb-core'
--- 🇺🇸 Core framework resource name (QBCore/Just-core)
--- 🇸🇦 اسم الكور المستخدم في السيرفر (QBCore/Just-core)
-
+--Interaction system type: "target" or "interact"
+--نوع نظام التفاعل: "target" أو "interact"
 Config.interactType = 'interact'
--- 🇺🇸 Interaction system type: "target" or "interact"
--- 🇸🇦 نوع نظام التفاعل: "target" أو "interact"
 
-
+--Interaction resource name (if using interact system)
+--اسم سكربت التفاعل (في حال استخدام interact)
 Config.interact = 'interact'
--- 🇺🇸 Interaction resource name (if using interact system)
--- 🇸🇦 اسم سكربت التفاعل (في حال استخدام interact)
 
-
+--Target resource name (if using target system)
+--اسم سكربت الاستهداف (في حال استخدام target)
 Config.Target = 'qb-target'
--- 🇺🇸 Target resource name (if using target system)
--- 🇸🇦 اسم سكربت الاستهداف (في حال استخدام target)
 
-
+--Inventory image path for item icons
+--مسار صور الأيقونات الخاصة بالأغراض في الانفنتوري
 Config.inventory = "nui://qb-inventory/html/images/"
--- 🇺🇸 Inventory image path for item icons
--- 🇸🇦 مسار صور الأيقونات الخاصة بالأغراض في الانفنتوري
 
+--If true, shop blips will always be enabled by default.
+--إذا كانت true، علامات المتاجر على الخريطة ستكون مفعلة دائمًا بشكل تلقائي.
 
+--If false, blips can be toggled manually using:
+--إذا كانت false، يمكن تشغيل/إيقاف العلامات يدويًا باستخدام الحدث:
+
+-- TriggerEvent('VGX-Shops:client:ToggleBlips')
+Config.BlipsOn = true 
 
 
 --=============================================
@@ -85,23 +86,23 @@ Config.Products = {
 
 
 -- ['example'] = {
---     Title = "Example", -- 🇺🇸 Shop title shown in UI | 🇸🇦 اسم المتجر في الواجهة
---     items = Config.Products["example"], -- 🇺🇸 Items list for this shop | 🇸🇦 قائمة المنتجات لهذا المتجر
---     coords = vector3(24.91, -1345.6, 29.5), -- 🇺🇸 Interaction location | 🇸🇦 موقع التفاعل مع المتجر
---     job = 'none', -- 🇺🇸 Required job ("none" = everyone) | 🇸🇦 الوظيفة المطلوبة ("none" للجميع)
---     jobgrade = 0, -- 🇺🇸 Minimum grade required | 🇸🇦 أقل رتبة وظيفية مطلوبة
+--     Title = "Example", --Shop title shown in UI |اسم المتجر في الواجهة
+--     items = Config.Products["example"], --Items list for this shop |قائمة المنتجات لهذا المتجر
+--     coords = vector3(24.91, -1345.6, 29.5), --Interaction location |موقع التفاعل مع المتجر
+--     job = 'none', --Required job ("none" = everyone) |الوظيفة المطلوبة ("none" للجميع)
+--     jobgrade = 0, --Minimum grade required |أقل رتبة وظيفية مطلوبة
 --     blip = {
---         enable = true, -- 🇺🇸 Enable map blip | 🇸🇦 تفعيل علامة الخريطة
---         sprite = 59, -- 🇺🇸 Blip icon ID | 🇸🇦 رقم أيقونة العلامة
---         color = 0, -- 🇺🇸 Blip color ID | 🇸🇦 لون العلامة
---         scale = 0.6, -- 🇺🇸 Blip size | 🇸🇦 حجم العلامة
---         label = 'Supermarket' -- 🇺🇸 Name on map | 🇸🇦 الاسم الظاهر بالخريطة
+--         enable = true, --Enable map blip |تفعيل علامة الخريطة
+--         sprite = 59, --Blip icon ID |رقم أيقونة العلامة
+--         color = 0, --Blip color ID |لون العلامة
+--         scale = 0.6, --Blip size |حجم العلامة
+--         label = 'Supermarket' --Name on map |الاسم الظاهر بالخريطة
 --     },
 --     npc = {
---         enable = true, -- 🇺🇸 Enable NPC ped | 🇸🇦 تفعيل NPC البائع
---         model = 'mp_m_shopkeep_01', -- 🇺🇸 NPC model name | 🇸🇦 موديل شخصية البائع
---         coords = vector4(24.41, -1345.62, 29.5, 264.44), -- 🇺🇸 Spawn coords + heading | 🇸🇦 مكان الظهور + الاتجاه
---         animation = '' -- 🇺🇸 Scenario animation (optional) | 🇸🇦 حركة للبائع (اختياري)
+--         enable = true, --Enable NPC ped |تفعيل NPC البائع
+--         model = 'mp_m_shopkeep_01', --NPC model name |موديل شخصية البائع
+--         coords = vector4(24.41, -1345.62, 29.5, 264.44), --Spawn coords + heading |مكان الظهور + الاتجاه
+--         animation = '' --Scenario animation (optional) |حركة للبائع (اختياري)
 --     },
 -- },
 
@@ -577,7 +578,7 @@ Config.Shops = {
         job = 'police', 
         jobgrade = 0, 
         blip = {
-            enable = true,
+            enable = false,
             sprite = 59,
             color = 0,
             scale = 0.6,
@@ -591,5 +592,3 @@ Config.Shops = {
         },
     },
 }
-
-
