@@ -61,7 +61,6 @@ Used for the category bar and filtering. Set `category` on each product:
 - **info** – Table passed to inventory when giving item (e.g. durability, metadata)
 - **category** – Used for category filter
 - **grade** – Min job grade (for job shops)
-- **requiresLicense** – If true, player must have `weaponlicense` item
 
 ### Shops (`Config.Shops`)
 
