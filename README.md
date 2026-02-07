@@ -91,7 +91,7 @@ Used for the category bar and filtering. Set `category` on each product:
 
 ## Events
 
-| `Just-shops:client:ToggleBlips` | Client | Toggle shop blips on/off |
+| `VGX-Shops:client:ToggleBlips` | Client | Toggle shop blips on/off |
 
 ---
 
