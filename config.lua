@@ -6,7 +6,7 @@ Config.Locale = 'en'
 -- 🇸🇦 لغة واجهة المتجر (en/ar)
 
 
-Config.UiColor = "#10D6E6"
+Config.UiColor = "#0099ff"
 -- 🇺🇸 Main UI accent color (buttons, highlights)
 -- 🇸🇦 اللون الأساسي للواجهة (الأزرار والتحديد)
 
@@ -591,4 +591,5 @@ Config.Shops = {
         },
     },
 }
+
 
