@@ -18,7 +18,6 @@ A FiveM shop resource for QBCore/Just-core with a modern NUI, categories, cart c
 - **Custom UI color** – Single accent color for buttons and highlights
 - **Interaction types** – Works with **qb-target** or **interact**
 - **Item info** – Supports custom `info` (e.g. `fooding`, `uses`) and weapon serials for police
-- **Weapon license** – Optional `requiresLicense` per item
 
 ---
 
