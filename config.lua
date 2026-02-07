@@ -11,7 +11,7 @@ Config.UiColor = "#10D6E6"
 -- 🇸🇦 اللون الأساسي للواجهة (الأزرار والتحديد)
 
 
-Config.Core = 'Just-core'
+Config.Core = 'qb-core'
 -- 🇺🇸 Core framework resource name (QBCore/Just-core)
 -- 🇸🇦 اسم الكور المستخدم في السيرفر (QBCore/Just-core)
 
@@ -591,3 +591,4 @@ Config.Shops = {
         },
     },
 }
+
