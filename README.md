@@ -95,31 +95,7 @@ Used for the category bar and filtering. Set `category` on each product:
 | `Just-shops:client:ToggleBlips` | Client | Toggle shop blips on/off |
 
 ---
-\
-## File structure
 
-```
-VGX-Shops/
-├── client/
-│   └── client.lua      # Blips, interactions, NUI open/close, checkout callbacks
-├── server/
-│   ├── server.lua     # Checkout, single-item purchase, job/license checks
-│   └── shared.lua     # VGX_Inventory.GiveItem (handles unique/weapon/stackable)
-├── html/
-│   ├── index.html
-│   ├── script.js      # UI logic, categories, cart, translations
-│   ├── style.css
-│   └── sounds/
-│       ├── hover.mp3
-│       └── notify.mp3
-├── locales/
-│   └── locales.lua
-├── config.lua
-├── fxmanifest.lua
-└── README.md
-```
-
----
 
 ## License / support
 
