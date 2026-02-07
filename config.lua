@@ -10,7 +10,7 @@ Config.UiColor = "#10D6E6"
 
 --Core framework resource name (qb-core)
 --اسم الكور المستخدم في السيرفر (qb-core)
-Config.Core = 'Just-core'
+Config.Core = 'qb-core'
 
 --Interaction system type: "target" or "interact"
 --نوع نظام التفاعل: "target" أو "interact"
@@ -592,3 +592,4 @@ Config.Shops = {
         },
     },
 }
+
