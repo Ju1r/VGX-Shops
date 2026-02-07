@@ -22,17 +22,6 @@ A FiveM shop resource for QBCore/Just-core with a modern NUI, categories, cart c
 
 ---
 
-## Dependencies
-
-| Dependency    | Purpose                |
-|--------------|------------------------|
-| **QBCore** or **Just-core** | Framework (set `Config.Core`) |
-| **qb-inventory** (or compatible) | Item images path in `Config.inventory` |
-| **qb-target** or **interact** | Opening shops (set `Config.interactType`) |
-
-**Optional:** `oxmysql` – Included in `fxmanifest.lua` only if you use it elsewhere; shop data is config-based.
-
----
 
 ## Installation
 
