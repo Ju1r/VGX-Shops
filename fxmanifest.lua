@@ -12,7 +12,6 @@ shared_script {
 
 client_script 'client/*.lua'
 server_scripts {
-    '@oxmysql/lib/MySQL.lua', -- Add if using oxmysql
     'server/*.lua',
 }
 
@@ -24,3 +23,4 @@ files {
     'html/script.js',
     'html/sounds/*.mp3'
 }
+
