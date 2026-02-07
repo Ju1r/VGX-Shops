@@ -66,24 +66,24 @@ Used for the category bar and filtering. Set `category` on each product:
 ### Shops (`Config.Shops`)
 
 ```lua
-['SuperMarket1'] = {
-    Title = "Supermarket",
-    items = Config.Products["market"],
-    coords = vector3(24.91, -1345.6, 29.5),
-    job = 'none',        -- or e.g. 'police'
-    jobgrade = 0,
+['example'] = {
+    Title = "Example", -- 🇺🇸 Shop title shown in UI | 🇸🇦 اسم المتجر في الواجهة
+    items = Config.Products["example"], -- 🇺🇸 Items list for this shop | 🇸🇦 قائمة المنتجات لهذا المتجر
+    coords = vector3(24.91, -1345.6, 29.5), -- 🇺🇸 Interaction location | 🇸🇦 موقع التفاعل مع المتجر
+    job = 'none', -- 🇺🇸 Required job ("none" = everyone) | 🇸🇦 الوظيفة المطلوبة ("none" للجميع)
+    jobgrade = 0, -- 🇺🇸 Minimum grade required | 🇸🇦 أقل رتبة وظيفية مطلوبة
     blip = {
-        enable = true,
-        sprite = 59,
-        color = 0,
-        scale = 0.6,
-        label = 'Supermarket'
+        enable = true, -- 🇺🇸 Enable map blip | 🇸🇦 تفعيل علامة الخريطة
+        sprite = 59, -- 🇺🇸 Blip icon ID | 🇸🇦 رقم أيقونة العلامة
+        color = 0, -- 🇺🇸 Blip color ID | 🇸🇦 لون العلامة
+        scale = 0.6, -- 🇺🇸 Blip size | 🇸🇦 حجم العلامة
+        label = 'Supermarket' -- 🇺🇸 Name on map | 🇸🇦 الاسم الظاهر بالخريطة
     },
     npc = {
-        enable = true,
-        model = 'mp_m_shopkeep_01',
-        coords = vector4(24.41, -1345.62, 29.5, 264.44),
-        animation = ''
+        enable = true, -- 🇺🇸 Enable NPC ped | 🇸🇦 تفعيل NPC البائع
+        model = 'mp_m_shopkeep_01', -- 🇺🇸 NPC model name | 🇸🇦 موديل شخصية البائع
+        coords = vector4(24.41, -1345.62, 29.5, 264.44), -- 🇺🇸 Spawn coords + heading | 🇸🇦 مكان الظهور + الاتجاه
+        animation = '' -- 🇺🇸 Scenario animation (optional) | 🇸🇦 حركة للبائع (اختياري)
     },
 },
 ```
